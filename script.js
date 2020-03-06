@@ -16,9 +16,9 @@ function generate(titles, dates, names) {
       }
     })
     let ol = $("ol")
-    names[i].split("\n").map(a => a.replace(/ {1,}/g, " ")).sort().map(name => {
-      let li = $("li");
-      li.innerText = name;
+    names[i].split("\n").map(a => a.replace(/ {1,}/g, " ")).sort().map((name, i) => {
+      let li = $("p");
+      li.innerText = (i + 1 + "").padStart(2)+". "+name;
       ol.appendChild(li)
     })
     base.appendChild(h2)
