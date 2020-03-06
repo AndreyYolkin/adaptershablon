@@ -35,5 +35,3 @@ let names = [
 
 `Example3
 Example4`]
-
-generate(titles, dates, names)
